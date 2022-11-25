@@ -1,0 +1,20 @@
+// img{
+//   height:auto;
+//   width:100%;
+// }
+
+.content-video{
+  height:auto;
+  width:100%;
+}
+
+.content-document{
+  margin-bottom:1rem;
+}
+
+@media only screen and (min-width:768px){
+  .content-video{
+    height:315px;
+    width:560px;
+  }
+}
