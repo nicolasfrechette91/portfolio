@@ -33,9 +33,35 @@ $light-theme: mat.define-light-theme((
   @include mat.button-color($light-theme);
 }
 
+@font-face {
+  font-family: 'Inter Static';
+  font-weight: 400 600 700 800;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("/assets/fonts/Inter-Regular.woff2") format("woff2");
+}
+
+@supports (font-variation-settings: normal){
+  @font-face {
+    font-family: 'Inter Variable';
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+    font-named-instance: 'Regular';
+    src: url("/assets/fonts/Inter.var.woff2") format("woff2");
+  }
+}
+
 // Element Styling
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: 'Inter Variable', sans-serif;
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
 
 a {
   transition: all 100ms ease-in-out;
@@ -46,16 +72,31 @@ button {
   --mat-mdc-button-persistent-ripple-color: transparent !important;
 }
 
+mat-dialog-content {
+  padding-top: 24px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
 svg:hover {
   fill:#ffd3c6;
   transform:rotate(15deg);
 }
 
 // Global Class Styling
+.content {
+  font-size: 16px !important;
+}
+
 .mat-mdc-dialog-actions {
   justify-content: end !important;
   padding-right: 24px !important;
   padding-bottom: 16px !important;
+}
+
+.mat-mdc-dialog-title {
+  font-size: 32px !important;
+  font-weight: bold !important;
+  font-family: 'Inter Variable', sans-serif !important;
 }
 
 .more-info-button {

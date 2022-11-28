@@ -1,18 +1,28 @@
-// img{
-//   height:auto;
-//   width:100%;
-// }
+.content-description {
+  padding-bottom: 16px;
+}
 
-.content-video{
+.content-description-title {
+  font-size: 18px !important;
+  padding-bottom: 16px;
+}
+
+.content-tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content-tasks-title {
+  font-size: 18px !important;
+}
+
+.content-video {
   height:auto;
   width:100%;
 }
 
-.content-document{
-  margin-bottom:1rem;
-}
-
-@media only screen and (min-width:768px){
+@media only screen and (min-width:768px) {
   .content-video{
     height:315px;
     width:560px;
