@@ -39,7 +39,7 @@ $light-theme: mat.define-light-theme((
   font-display: swap;
   font-style: normal;
   font-named-instance: 'Regular';
-  src: url("/assets/fonts/Inter-Regular.woff2") format("woff2");
+  src: url("https://nicolasfrechette91.github.io/portfolio/assets/fonts/Inter-Regular.woff2") format("woff2");
 }
 
 @supports (font-variation-settings: normal){
@@ -49,7 +49,7 @@ $light-theme: mat.define-light-theme((
     font-display: swap;
     font-style: normal;
     font-named-instance: 'Regular';
-    src: url("/assets/fonts/Inter.var.woff2") format("woff2");
+    src: url("https://nicolasfrechette91.github.io/portfolio/assets/fonts/Inter.var.woff2") format("woff2");
   }
 }
 
