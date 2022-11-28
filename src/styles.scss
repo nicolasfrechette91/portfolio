@@ -46,10 +46,6 @@ button {
   --mat-mdc-button-persistent-ripple-color: transparent !important;
 }
 
-svg {
-  padding:24px;
-}
-
 svg:hover {
   fill:#ffd3c6;
   transform:rotate(15deg);
@@ -67,8 +63,12 @@ svg:hover {
   margin-right: 16px;
 }
 
-.profile-link{
+.profile-link {
   padding: 8px;
+}
+
+.profile-link:hover{
+  color:#ffd3c6;
 }
 
 .title {
