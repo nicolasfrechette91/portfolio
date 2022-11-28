@@ -1,76 +1,9 @@
-@import "https://fonts.googleapis.com/css?family=Lato&effect=shadow-multiple";
-@import "https://fonts.googleapis.com/css?family=Vibur&display=swap";
-
-#contact-section{
+#contact-section {
   width: 100%;
-  min-height:50vh;
+  min-height: 30vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
 }
-
-h1{
-  font-size:4em;
-}
-
-
-a{
-  transition: all 100ms ease-in-out;
-}
-
-.message{
-  margin-bottom:2%;
-}
-
-
-svg:hover{
-  fill:#c6e2ff;
-  transform:rotate(10deg);
-  }
-  svg{
-    padding:20px;
-  }
-
-
-.sign {
-
-  margin-top: 5%;
-  font-family: "Vibur", cursive;
-
-  &-word {
-    margin-top: 50%;
-    font-size: 5.6rem;
-    text-align: center;
-    line-height: 1;
-    color: #c6e2ff;
-    animation: neon .08s ease-in-out infinite alternate;
-  }
-
-}
-
-/*-- Animation Keyframes --*/
-// animation
-@keyframes neon {
-  from {
-    text-shadow:
-    0 0 6px rgba(202,228,225,0.92),
-    0 0 30px rgba(202,228,225,0.34),
-    0 0 12px rgba(30,132,242,0.52),
-    0 0 21px rgba(30,132,242,0.92),
-    0 0 34px rgba(30,132,242,0.78),
-    0 0 54px rgba(30,132,242,0.92);
-  }
-  to {
-    text-shadow:
-    0 0 6px rgba(202,228,225,0.98),
-    0 0 30px rgba(202,228,225,0.42),
-    0 0 12px rgba(30,132,242,0.58),
-    0 0 22px rgba(30,132,242,0.84),
-    0 0 38px rgba(30,132,242,0.88),
-    0 0 60px rgba(30,132,242,1);
-  }
-}
-

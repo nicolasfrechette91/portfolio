@@ -1,5 +1,43 @@
-html, body { height: 100%; }
-body { margin: 0;}
-
+// Element Styling
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+a {
+  transition: all 100ms ease-in-out;
+}
+
+svg {
+  padding:24px;
+}
+
+svg:hover {
+  fill:#ffd3c6;
+  transform:rotate(15deg);
+}
+
+// Global Class Styling
+.profile-link{
+  padding: 8px;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+.title-text {
+  background-image: linear-gradient(transparent 30%, #FF1c0b 70%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+// Mobile Exclusive Adjustment
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    line-height: 1.25rem;
+    text-align: center;
+  }
+}
