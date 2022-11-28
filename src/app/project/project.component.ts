@@ -1,8 +1,7 @@
-import { Component, Input, OnInit, Inject } from '@angular/core';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { Component, Input, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { DialogDetailComponent } from '../dialog-detail/dialog-detail.component';
 import { DialogData } from '../projects';
-
 
 @Component({
   selector: 'app-project',
@@ -14,9 +13,9 @@ export class ProjectComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
 
   openDialog(projectData: DialogData){
-     this.dialog.open(DialogDetailComponent, {
-       data: projectData
-     });
+    this.dialog.open(DialogDetailComponent, {
+      data: projectData
+    });
   }
 
   ngOnInit(): void {

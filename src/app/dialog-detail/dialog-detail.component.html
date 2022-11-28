@@ -1,19 +1,16 @@
 <h2 mat-dialog-title>{{data.title}}</h2>
 <mat-dialog-content>
-
   <div class="content">
-  <div class="content-video_container" *ngIf="data.video!=''"><iframe class="content-video" [src]="data.video | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-  <div class="content-image" *ngIf="data.images!=''"><img src={{data.images}}></div>
-  <div class="content-document" *ngIf="data.document!=''">Click <a href={{data.document}}>here</a> to see our PowerPoint slide deck.</div>
-  <div class="content-purpose-title"><strong>Purpose</strong></div>
-  <div class="content-purpose">{{data.purpose}}</div>
-  <div class="content-tasks-title"><strong>Tasks</strong></div>
-  <div class="content-task"><ul><li *ngFor="let task of data.tasks">{{task}}</li></ul></div>
-
-  <!-- <div class=".content-purpose-title"><strong>Results</strong></div> -->
-  <!-- <div class=".content-results">{{data.results}}</div>   -->
- </div>
+    <div class="content-video_container" *ngIf="data.video!=''"><iframe class="content-video" [src]="data.video | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="content-image" *ngIf="data.images!=''"><img src={{data.images}}></div>
+    <div class="content-document" *ngIf="data.document!=''">Click <a href={{data.document}}>here</a> to see our PowerPoint slide deck.</div>
+    <div class="content-purpose-title"><strong>Purpose</strong></div>
+    <div class="content-purpose">{{data.purpose}}</div>
+    <div class="content-tasks-title"><strong>Tasks</strong></div>
+    <div class="content-task"><ul><li *ngFor="let task of data.tasks">{{task}}</li></ul></div>
+  </div>
 </mat-dialog-content>
+
 <mat-dialog-actions>
   <button mat-button mat-dialog-close>Close</button>
 </mat-dialog-actions>

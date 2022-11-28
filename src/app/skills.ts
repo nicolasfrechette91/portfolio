@@ -1,4 +1,4 @@
-export const skills = [
+export const Skills = [
   {
     icon:'https://nicolasfrechette91.github.io/portfolio/assets/images/icon5.svg',
     name: 'Front-end Programming',

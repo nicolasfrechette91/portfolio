@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { skills } from '../skills';
+import { Skills } from '../skills';
 
 @Component({
   selector: 'app-skills',
@@ -7,10 +7,14 @@ import { skills } from '../skills';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-skills=skills;
-  constructor() { }
+  private _skills = Skills;
+
+  constructor() {}
 
   ngOnInit(): void {
   }
 
+  public get skills(): typeof Skills {
+    return this._skills;
+  }
 }
