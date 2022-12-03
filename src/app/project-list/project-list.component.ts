@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Projects } from '../projects';
 
 @Component({
@@ -6,13 +6,8 @@ import { Projects } from '../projects';
   templateUrl: './project-list.component.html',
   styleUrls: ['./project-list.component.scss']
 })
-export class ProjectListComponent implements OnInit {
+export class ProjectListComponent {
   private _projects = Projects;
-
-  constructor() {}
-
-  ngOnInit(): void {
-  }
 
   public get projects(): typeof Projects {
     return this._projects;

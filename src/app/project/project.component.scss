@@ -1,101 +1,79 @@
-.project-tile{
-  display:flex;
-  width: 100%;
-  min-height:60vh;
-  align-items: center;
-  justify-content: space-evenly;
-
-  &--reverse{
-    @extend .project-tile;
-    flex-direction: row-reverse;
-  }
-
-}
-
-// .project-tile2{
-//   display:flex;
-//   flex-direction: row-reverse;
-//   width: 100%;
-//   min-height:60vh;
-//   // background: linear-gradient(45deg, #c6e2ff, white);
-//   align-items: center;
-//   justify-content: space-evenly;
-// }
-
 img {
   max-width: 525px;
-  height: auto;
-  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
-  //       rgba(0, 0, 0, 0.19);
-  margin: 10px;
+  margin: 8px;
 }
+
 //large screen
-@media(min-width:992px){
+@media(min-width:992px) {
   img {
     max-width: 40vw;
     max-height: 50vh;
   }
 }
-a {
-  color:#8cbbd1;
+
+.project-container {
+  width: 33%;
 }
 
-.project-name{
-  color:black;
+.project-description {
+  font-size: 16px !important;
+}
+
+.project-languages {
+  font-size: 16px;
+}
+
+.project-languages-header {
   font-weight: bold;
-  //line-height: 1.1rem;
-
-}
- mat-card-content{
-  text-align: center;
-  }
-
-svg:hover{
-  fill:white;
-}
-// a:hover{
-//   color:white;
-// }
-
-.project-description{
-  font-size: 1.5em;
-  width: calc(100%  / 3);
-  color: black;
-  margin: 2%;
+  padding-top: 24px;
+  font-size: 20px;
 }
 
 .project-links{
   display:flex;
   align-items: center;
-
 }
 
+.project-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.project-tile {
+  display: flex;
+  width: 100%;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.project-tile-reverse {
+  display:flex;
+  width: 100%;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+
+// Mobile Exclusive
 @media(max-width:768px){
   .project-tile{
     flex-direction: column;
   }
-  .project-tile2{
-    flex-direction: column;
-  }
-  .project-description{
-    font-size: 1.5em;
+
+  .project-container {
     width: 90%;
+    padding-left: 48px;
+    padding-right: 48px;
   }
+
   img {
     max-width: 90vw;
   }
-  .project-links{
+
+  .project-links {
     flex-wrap: wrap;
-  }
-  a{
-    margin-bottom: 5%;
-  }
-  button{
-    margin: 5%;
+    justify-content: center;
   }
 }
-
-.project-awards{
-  list-style: none;
-}
-

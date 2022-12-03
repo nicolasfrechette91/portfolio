@@ -35,8 +35,6 @@ $light-theme: mat.define-light-theme((
 
 @font-face {
   font-family: 'Inter Static';
-  font-weight: 400 600 700 800;
-  font-display: swap;
   font-style: normal;
   font-named-instance: 'Regular';
   src: url("https://nicolasfrechette91.github.io/portfolio/assets/fonts/Inter-Regular.woff2") format("woff2");
@@ -45,8 +43,6 @@ $light-theme: mat.define-light-theme((
 @supports (font-variation-settings: normal){
   @font-face {
     font-family: 'Inter Variable';
-    font-weight: 100 900;
-    font-display: swap;
     font-style: normal;
     font-named-instance: 'Regular';
     src: url("https://nicolasfrechette91.github.io/portfolio/assets/fonts/Inter.var.woff2") format("woff2");
@@ -70,6 +66,10 @@ a {
 button {
   background-color: #DB2838 !important;
   --mat-mdc-button-persistent-ripple-color: transparent !important;
+}
+
+button:hover {
+  background-color: #b71c37 !important;
 }
 
 mat-dialog-content {
@@ -99,8 +99,24 @@ svg:hover {
   font-family: 'Inter Variable', sans-serif !important;
 }
 
+.mat-mdc-outlined-button.mat-accent {
+  color: #434049 !important;
+  font-weight: 600 !important;
+}
+
+.mat-mdc-button.mat-accent, .mat-mdc-outlined-button.mat-accent:hover {
+  background-color: #fff0f0 !important;
+  --mat-mdc-button-persistent-ripple-color: #fff0f0 !important;
+}
+
+.mat-mdc-button.mat-accent, .mat-mdc-outlined-button.mat-accent:active {
+  background-color: #fff0f0 !important;
+  --mat-mdc-button-persistent-ripple-color: #fff0f0 !important;
+}
+
 .more-info-button {
-  border: 1px solid lightblue;
+  border: 1px solid #ff000036;
+  border-radius: 4px;
   margin-right: 16px;
 }
 
@@ -110,6 +126,22 @@ svg:hover {
 
 .profile-link:hover{
   color:#ffd3c6;
+}
+
+.pt-1 {
+  padding-top: 4px;
+}
+
+.pt-2 {
+  padding-top: 8px;
+}
+
+.pt-3 {
+  padding-top: 16px;
+}
+
+.pt-4 {
+  padding-top: 24px;
 }
 
 .title {
@@ -127,6 +159,11 @@ svg:hover {
 
 // Mobile Exclusive Adjustment
 @media (max-width: 768px) {
+  .cdk-overlay-pane {
+    min-width: 100%;
+    width: 100%;
+  }
+
   .title {
     font-size: 2rem;
     line-height: 1.25rem;

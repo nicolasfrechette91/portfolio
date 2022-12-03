@@ -11,3 +11,10 @@
 svg {
   padding: 24px;
 }
+
+// Mobile Exclusive
+@media(max-width:768px) {
+  #contact-section {
+    min-height: 0vh;
+  }
+}

@@ -1,29 +1,24 @@
-<div [ngClass]="(project.id%2==0)?'project-tile mat-typography':'project-tile--reverse mat-typography'">
-  <div class="project-card">
-    <div *ngIf="project.github; else elseBlock">
-      <a href={{project.github}} target="_blank"><img src={{project.image}} alt="{{'Screen of '+project.name}}"></a>
-    </div>
-    <ng-template #elseBlock>
-      <a href={{project.link}} target="_blank"><img src={{project.image}} alt="{{'Screen of '+project.name}}"></a>
-    </ng-template>
-  </div>
-  <div class="project-description">
-    <div class="mat-h1 project-name">{{project.name}}</div>
-    <div class="mat-h3">{{project.description}}</div>
-    <div *ngIf="project.awards" class="project-awards mat-h3">
-      <div *ngFor="let award of project.awards">🏆{{award}}</div>
-    </div>
-    <p class="project-tech mat-h4">{{project.tech | uppercase }}</p>
-    <div class="project-links">
+<div [ngClass]="(project.id%2==0)?'project-tile-reverse':'project-tile'">
+  <div class="project-container">
+    <div class="project-name">{{project.name}}</div>
+    <div class="project-description pt-1">{{project.description}}</div>
+    <div class="project-languages-header">Languages</div>
+    <div class="project-languages pt-1">{{project.languages}}</div>
+
+    <div class="project-links pt-3">
       <div *ngIf="project.dialog" class="more-info-button">
-        <a mat-stroked-button color="accent" (click)="openDialog(project.dialog)">MORE INFO</a>
+        <a mat-stroked-button color="accent" (click)="openDialog(project.dialog)">More info</a>
       </div>
       <div *ngIf="project.link" class="more-info-button">
         <a mat-stroked-button color="accent" href={{project.link}} target="_blank" alt="Project Link">Visit</a>
       </div>
       <div *ngIf="project.github" class="more-info-button">
-        <a mat-stroked-button color="accent" href={{project.github}} target="_blank" alt="Github Link">GITHUB</a>
+        <a mat-stroked-button color="accent" href={{project.github}} target="_blank" alt="Github Link">Github</a>
       </div>
     </div>
+  </div>
+
+  <div class="project-card">
+    <img src={{project.image}} alt="{{'Screen of '+project.name}}">
   </div>
 </div>

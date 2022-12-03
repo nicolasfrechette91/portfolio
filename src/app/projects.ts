@@ -15,7 +15,7 @@ export const Projects = [
     name: 'Wedding Website',
     image: 'https://nicolasfrechette91.github.io/portfolio/assets/images/wedding_project.png',
     description: 'Creation from scratch of a website in preparation for my wedding. This was used to inform the guests of the location and gather all of the pictures in one location.',
-    tech: 'HTML · jQuery · CSS',
+    languages: 'HTML · jQuery · CSS',
     dialog: {
       title: 'My Wedding Website',
       description: 'This was built to preserve nice memories of my wedding and as a creative way to inform the guests.',
