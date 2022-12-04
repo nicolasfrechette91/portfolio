@@ -1,9 +1,7 @@
 # Portfolio
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
-You can contact me if you have any question
-
-Nicolas Frechette
+You can contact me if you have any question.
 
 # Image sources
 <a href="https://iconscout.com/illustrations/developer-team" target="_blank">Developer Team Illustration</a> by <a href="https://iconscout.com/contributors/delesign" target="_blank">Delesign Graphics</a>

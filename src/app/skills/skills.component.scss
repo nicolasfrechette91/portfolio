@@ -46,15 +46,20 @@ li {
 
 @media(max-width:768px){
   img {
-    max-width:100px;
-    max-height:100px;
-    margin:0;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0;
+  }
+
+  li {
+    font-size: 14px;
   }
 
   .container-skills {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 4px;
+    margin: 32px 8px 16px 8px;
   }
 
   .container-skill {
@@ -64,9 +69,6 @@ li {
 
   .skill-name{
     margin: 0;
-  }
-
-  .tech {
-    display: none;
+    text-align: center;
   }
 }
