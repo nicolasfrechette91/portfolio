@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 
 //Angular Material Components
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
@@ -50,7 +49,6 @@ import { SkillsComponent } from './skills/skills.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     NavigationBarComponent,
     ProjectListComponent,
     ProjectComponent,

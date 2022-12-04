@@ -9,8 +9,20 @@ mat-toolbar {
   background-color: transparent;
 }
 
+li:hover {
+  transform:rotate(15deg);
+}
+
 ul {
   list-style-type: none;
+}
+
+.header-toolbar {
+  background: linear-gradient(35deg, #ffd194, #70e1f5);
+}
+
+.logo {
+  font-size: 36px;
 }
 
 .menu {
@@ -21,35 +33,32 @@ ul {
   justify-content:flex-end;
 }
 
-.flex {
+.nav-header {
   display:flex;
   justify-content:space-between;
   align-items: center;
   width:100%;
 }
 
-.logo {
-  background-color: #70e1f5;
-  background-image: linear-gradient(45deg, #ff0f05, #ffe005);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  font-size: 36px;
-}
+// Mobile only
+@media(max-width:560px) {
+  li:hover {
+    transform:rotate(0deg);
+  }
 
-li:hover {
-  transform:rotate(10deg);
-}
-
-@media(max-width:560px){
-  .ext-link{
+  .ext-link {
     display:none;
   }
-  .logo{
-    display:none;
 
+  .logo {
+    display:none;
+  }
+
+  .nav-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: initial;
+    width: 100%;
+    padding-left: 16px;
   }
 }

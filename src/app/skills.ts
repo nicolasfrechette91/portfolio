@@ -1,13 +1,13 @@
 export const Skills = [
   {
-    icon:'https://nicolasfrechette91.github.io/portfolio/assets/images/icon5.svg',
+    icon:'https://nicolasfrechette91.github.io/portfolio/assets/images/man-developing-website-on-desk.svg',
     name: 'Front-end Programming',
-    tech: ['Angular 10 (TypeScript)', 'React', 'JavaScript ES6', 'HTML5, CSS3, Bootstrap', 'Consume API, Parse JSON']
+    tech: ['Angular 15 (TypeScript)', 'React', 'jQuery', 'HTML5, CSS3, Bootstrap', 'Node.js', 'Consume API, Parse JSON']
   },
   {
     icon:'https://nicolasfrechette91.github.io/portfolio/assets/images/icon10.svg',
     name: 'Back-end Programming',
-    tech: ['Java (Spring Boot, Hibernate ORM, JUnit Test)',' C# .NET', 'RESTful API and Web Services return JSON', 'Linux Bash Shell']
+    tech: ['Java (Spring Boot, Hibernate ORM)','C#', 'ASP.NET','RESTful API and Web Services return JSON', 'Linux Bash Shell']
   },
   {
     icon:'https://nicolasfrechette91.github.io/portfolio/assets/images/icon2.svg',

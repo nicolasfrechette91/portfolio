@@ -1,27 +1,17 @@
 # Portfolio
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
-## Development server
+You can contact me if you have any question
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Nicolas Frechette
 
-## Code scaffolding
+# Image attribution
+<a href="https://iconscout.com/illustrations/developer-team" target="_blank">Developer Team Illustration</a> by <a href="https://iconscout.com/contributors/delesign" target="_blank">Delesign Graphics</a>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<a href="https://iconscout.com/illustrations/man" target="_blank">Man developing website on desk Illustration</a> by <a href="https://iconscout.com/contributors/woobrodesign" target="_blank">WOOBRO LTD</a>
 
-## Build
+<a href="https://iconscout.com/illustrations/software-engineer" target="_blank">Software engineer Illustration</a> by <a href="https://iconscout.com/contributors/delesign" target="_blank">Delesign Graphics</a>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<a href="https://iconscout.com/illustrations/testing" target="_blank">Testing Illustration</a> by <a href="https://iconscout.com/contributors/delesign" target="_blank">Delesign Graphics</a>
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<a href="https://iconscout.com/illustrations/women" target="_blank">Women Web Developer with laptop Illustration</a> by <a href="https://iconscout.com/contributors/woobrodesign">WOOBRO LTD</a> on <a href="https://iconscout.com">IconScout</a>

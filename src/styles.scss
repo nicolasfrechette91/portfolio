@@ -124,7 +124,7 @@ svg:hover {
   padding: 8px;
 }
 
-.profile-link:hover{
+.profile-link:hover {
   color:#ffd3c6;
 }
 
@@ -162,6 +162,10 @@ svg:hover {
   .cdk-overlay-pane {
     min-width: 100%;
     width: 100%;
+  }
+
+  .profile-link:hover{
+    color: unset;
   }
 
   .title {
