@@ -10,7 +10,7 @@ mat-toolbar {
 }
 
 li:hover {
-  transform:rotate(15deg);
+  transform: rotate(15deg);
 }
 
 ul {
@@ -30,28 +30,33 @@ ul {
   display: flex;
   font-size: 24px;
   gap: 4px;
-  justify-content:flex-end;
+  justify-content: flex-end;
 }
 
 .nav-header {
-  display:flex;
-  justify-content:space-between;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  width:100%;
+  width: 100%;
 }
 
 // Mobile only
 @media(max-width:560px) {
   li:hover {
-    transform:rotate(0deg);
+    transform: rotate(0deg);
   }
 
   .ext-link {
-    display:none;
+    padding-right: 16px;
   }
 
   .logo {
-    display:none;
+    display: none;
+  }
+
+  .menu {
+    padding-left: 0px;
+    gap: 0px;
   }
 
   .nav-header {
@@ -59,6 +64,14 @@ ul {
     justify-content: flex-end;
     align-items: initial;
     width: 100%;
-    padding-left: 16px;
+    padding-left: 0px;
+  }
+
+  .profile-link {
+    display: none;
+  }
+
+  .profile-link.ext-link {
+    display: block;
   }
 }
