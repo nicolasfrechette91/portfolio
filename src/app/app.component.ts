@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = "Nicolas's Portfolio";
+  private _isFrench: boolean = false;
+
+  constructor() {}
+
+  public get isFrench(): boolean {
+    return this._isFrench;
+  }
 }

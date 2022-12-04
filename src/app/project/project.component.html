@@ -1,16 +1,23 @@
 <div [ngClass]="(project.id%2==0)?'project-tile-reverse':'project-tile'">
   <div class="project-container">
-    <div class="project-name">{{project.name}}</div>
-    <div class="project-description pt-1">{{project.description}}</div>
-    <div class="project-languages-header">Languages</div>
-    <div class="project-languages pt-1">{{project.languages}}</div>
+    <div class="project-name" *ngIf="isFrench">{{project.nameFrench}}</div>
+    <div class="project-description pt-1" *ngIf="isFrench">{{project.descriptionFrench}}</div>
+    <div class="project-languages-header" *ngIf="isFrench">Langues</div>
+    <div class="project-languages pt-1" *ngIf="isFrench">{{project.languagesFrench}}</div>
+
+    <div class="project-name" *ngIf="!isFrench">{{project.name}}</div>
+    <div class="project-description pt-1" *ngIf="!isFrench">{{project.description}}</div>
+    <div class="project-languages-header" *ngIf="!isFrench">Languages</div>
+    <div class="project-languages pt-1" *ngIf="!isFrench">{{project.languages}}</div>
 
     <div class="project-links pt-3">
       <div *ngIf="project.dialog" class="more-info-button">
-        <a mat-stroked-button color="accent" (click)="openDialog(project.dialog)">More info</a>
+        <a mat-stroked-button color="accent" (click)="openDialog(project.dialog)" *ngIf="isFrench">Plus d'informations</a>
+        <a mat-stroked-button color="accent" (click)="openDialog(project.dialog)" *ngIf="!isFrench">More info</a>
       </div>
       <div *ngIf="project.link" class="more-info-button">
-        <a mat-stroked-button color="accent" href={{project.link}} target="_blank" alt="Project Link">Visit</a>
+        <a mat-stroked-button color="accent" href={{project.linkFrench}} target="_blank" alt="Lien du Projet" *ngIf="isFrench">Visite</a>
+        <a mat-stroked-button color="accent" href={{project.link}} target="_blank" alt="Project Link" *ngIf="!isFrench">Visit</a>
       </div>
       <div *ngIf="project.github" class="more-info-button">
         <a mat-stroked-button color="accent" href={{project.github}} target="_blank" alt="Github Link">Github</a>
@@ -19,6 +26,7 @@
   </div>
 
   <div class="project-card">
-    <img src={{project.image}} alt="{{'Screen of '+project.name}}">
+    <img src={{project.image}} alt="{{'Écran du '+ project.name}}" *ngIf="isFrench">
+    <img src={{project.image}} alt="{{'Screen of '+ project.name}}" *ngIf="!isFrench">
   </div>
 </div>

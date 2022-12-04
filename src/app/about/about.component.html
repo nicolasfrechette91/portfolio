@@ -4,19 +4,27 @@
       <mat-card-header>
         <div mat-card-avatar class="custom-header-image"></div>
         <mat-card-title>Nicolas Frechette</mat-card-title>
-        <mat-card-subtitle>Developer</mat-card-subtitle>
+        <mat-card-subtitle *ngIf="isFrench">Développeur</mat-card-subtitle>
+        <mat-card-subtitle *ngIf="!isFrench">Developer</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="https://nicolasfrechette91.github.io/portfolio/assets/images/nico.jpg" alt="Me Studying Programming">
+
       <mat-card-content>
-        <p>🎓Polytechnique Montreal 2015 Software Engineering - Multimedia Concentration</p>
+        <p *ngIf="isFrench">🎓École Polytechnique Montréal 2015 Baccalauréat en génie logiciel - Concentration multimédia</p>
+        <p *ngIf="!isFrench">🎓Polytechnique Montreal 2015 Software Engineering - Multimedia Concentration</p>
       </mat-card-content>
     </mat-card>
 
     <div class="custom-about">
-      <h1 class="custom-hello">Hello,</h1>
-      <p class="custom-sentence"> I'm a hard-working programmer with 8+ years of experience in <strong>web application development</strong>.</p>
-      <p class="custom-sentence">I love big projects, learning new languages and interacting with others.</p>
-      <p class="custom-sentence">Communication and organization are very important to me!</p>
+      <h1 class="custom-hello" *ngIf="isFrench">Bonjour,</h1>
+      <p class="custom-sentence" *ngIf="isFrench">Je suis un programmeur travailleur avec plus de 8 ans d'expérience dans le <strong>développement d'applications Web</strong>.</p>
+      <p class="custom-sentence" *ngIf="isFrench">J'aime les projets de grande envergure, apprendre de nouvelles langues et interagir avec les autres.</p>
+      <p class="custom-sentence" *ngIf="isFrench">La communication et l'organisation sont très importantes pour moi !</p>
+
+      <h1 class="custom-hello" *ngIf="!isFrench">Hello,</h1>
+      <p class="custom-sentence" *ngIf="!isFrench">I'm a hard-working programmer with 8+ years of experience in <strong>web application development</strong>.</p>
+      <p class="custom-sentence" *ngIf="!isFrench">I love big projects, learning new languages and interacting with others.</p>
+      <p class="custom-sentence" *ngIf="!isFrench">Communication and organization are very important to me!</p>
     </div>
   </div>
 </div>

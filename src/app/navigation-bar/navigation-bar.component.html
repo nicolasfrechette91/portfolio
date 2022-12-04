@@ -5,13 +5,22 @@
     </div>
 
     <ul class="menu">
-      <li>
+      <li *ngIf="isFrench">
+        <a class="profile-link" href="#skills-section">COMPÉTENCES</a>
+      </li>
+      <li *ngIf="isFrench">
+        <a class="profile-link" href="#projects-section">PROJETS</a>
+      </li>
+      <li *ngIf="isFrench">
+        <a class="profile-link" href="#contact-section">CONTACTEZ</a>
+      </li>
+      <li *ngIf="!isFrench">
         <a class="profile-link" href="#skills-section">SKILLS</a>
       </li>
-      <li>
+      <li *ngIf="!isFrench">
         <a class="profile-link" href="#projects-section">PROJECTS</a>
       </li>
-      <li>
+      <li *ngIf="!isFrench">
         <a class="profile-link" href="#contact-section">CONTACT</a>
       </li>
       <li>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
 import { Skills } from '../skills';
 
 @Component({
@@ -6,10 +7,12 @@ import { Skills } from '../skills';
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss']
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent extends AppComponent implements OnInit {
   private _skills = Skills;
 
-  constructor() {}
+  constructor() {
+    super();
+  }
 
   ngOnInit(): void {
   }

@@ -1,4 +1,7 @@
-<h2 mat-dialog-title>{{data.title}}</h2>
+<h2 mat-dialog-title>
+  <ng-container *ngIf="isFrench">{{data.titleFrench}}</ng-container>
+  <ng-container *ngIf="!isFrench">{{data.title}}</ng-container>
+</h2>
 
 <mat-dialog-content>
   <div class="content">
@@ -10,14 +13,23 @@
     </div>
 
     <div class="content-description-title"><strong>Description</strong></div>
-    <div class="content-description">{{data.description}}</div>
 
-    <div class="content-tasks-title"><strong>Tasks</strong></div>
-    <div class="content-task">
+    <div class="content-description" *ngIf="isFrench">{{data.descriptionFrench}}</div>
+    <div class="content-tasks-title" *ngIf="isFrench"><strong>Tâches</strong></div>
+    <div class="content-task" *ngIf="isFrench">
+      <ul class="content-tasks-list">
+        <li *ngFor="let task of data.tasksFrench">{{task}}</li>
+      </ul>
+    </div>
+
+    <div class="content-description" *ngIf="!isFrench">{{data.description}}</div>
+    <div class="content-tasks-title" *ngIf="!isFrench"><strong>Tasks</strong></div>
+    <div class="content-task" *ngIf="!isFrench">
       <ul class="content-tasks-list">
         <li *ngFor="let task of data.tasks">{{task}}</li>
       </ul>
     </div>
+
   </div>
 </mat-dialog-content>
 

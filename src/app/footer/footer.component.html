@@ -1,6 +1,7 @@
 <div id="contact-section">
   <h1 class="title">
-    <span class="title-text">LET'S CONNECT!</span>
+    <span class="title-text" *ngIf="isFrench">CONTACTEZ MOI !</span>
+    <span class="title-text" *ngIf="!isFrench">LET'S CONNECT!</span>
   </h1>
   <div>
     <a class="profile-link" href="https://github.com/nicolasfrechette91" target="_blank">

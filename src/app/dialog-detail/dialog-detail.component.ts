@@ -1,5 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { AppComponent } from '../app.component';
 import { DialogData } from '../projects';
 
 @Component({
@@ -7,10 +8,10 @@ import { DialogData } from '../projects';
   templateUrl: './dialog-detail.component.html',
   styleUrls: ['./dialog-detail.component.scss']
 })
-export class DialogDetailComponent implements OnInit {
+export class DialogDetailComponent extends AppComponent {
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData) { }
-
-  ngOnInit(): void {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData) {
+    super();
   }
+
 }

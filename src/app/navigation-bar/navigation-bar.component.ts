@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -6,4 +7,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation-bar.component.scss']
 })
 
-export class NavigationBarComponent {}
+export class NavigationBarComponent extends AppComponent {}
