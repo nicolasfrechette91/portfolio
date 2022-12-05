@@ -144,9 +144,9 @@ svg:hover {
   padding-top: 24px;
 }
 
-.title {
-  font-size: 3rem;
-  line-height: 1.25rem;
+.title, .title-french {
+  font-size: 48px;
+  line-height: 24px;
   text-align: center;
 }
 
@@ -164,13 +164,27 @@ svg:hover {
     width: 100%;
   }
 
+  .mat-mdc-outlined-button.mat-accent {
+    color: #434049 !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
   .profile-link:hover {
     color: unset;
   }
 
   .title {
-    font-size: 2rem;
-    line-height: 1.25rem;
+    font-size: 32px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .title-french {
+    font-size: 24px;
+    line-height: 24px;
     text-align: center;
   }
 }

@@ -1,8 +1,11 @@
 <div id="contact-section">
-  <h1 class="title">
-    <span class="title-text" *ngIf="isFrench">CONTACTEZ MOI !</span>
-    <span class="title-text" *ngIf="!isFrench">LET'S CONNECT!</span>
+  <h1 class="title-french" *ngIf="isFrench">
+    <span class="title-text">CONTACTEZ MOI !</span>
   </h1>
+  <h1 class="title" *ngIf="!isFrench">
+    <span class="title-text">LET'S CONNECT!</span>
+  </h1>
+
   <div>
     <a class="profile-link" href="https://github.com/nicolasfrechette91" target="_blank">
       <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48px" height="48px">

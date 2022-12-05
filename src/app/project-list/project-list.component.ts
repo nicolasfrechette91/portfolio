@@ -7,6 +7,7 @@ import { Projects } from '../projects';
   templateUrl: './project-list.component.html',
   styleUrls: ['./project-list.component.scss']
 })
+
 export class ProjectListComponent extends AppComponent {
   private _projects = Projects;
 

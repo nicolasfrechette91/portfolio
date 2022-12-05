@@ -6,22 +6,22 @@
 
     <ul class="menu">
       <li *ngIf="isFrench">
-        <a class="profile-link" href="#skills-section">COMPÉTENCES</a>
+        <button class="profile-link header-button" (click)="ScrollTo('skills-section')">COMPÉTENCES</button>
       </li>
       <li *ngIf="isFrench">
-        <a class="profile-link" href="#projects-section">PROJETS</a>
+        <button class="profile-link header-button" (click)="ScrollTo('projects-section')">PROJETS</button>
       </li>
       <li *ngIf="isFrench">
-        <a class="profile-link" href="#contact-section">CONTACTEZ</a>
+        <button class="profile-link header-button" (click)="ScrollTo('contact-section')">CONTACTEZ</button>
       </li>
       <li *ngIf="!isFrench">
-        <a class="profile-link" href="#skills-section">SKILLS</a>
+        <button class="profile-link header-button" (click)="ScrollTo('skills-section')">SKILLS</button>
       </li>
       <li *ngIf="!isFrench">
-        <a class="profile-link" href="#projects-section">PROJECTS</a>
+        <button class="profile-link header-button" (click)="ScrollTo('projects-section')">PROJECTS</button>
       </li>
       <li *ngIf="!isFrench">
-        <a class="profile-link" href="#contact-section">CONTACT</a>
+        <button class="profile-link header-button" (click)="ScrollTo('contact-section')">CONTACT</button>
       </li>
       <li>
         <a class="profile-link ext-link" href="https://github.com/nicolasfrechette91/" target="_blank">

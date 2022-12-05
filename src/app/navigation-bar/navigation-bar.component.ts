@@ -7,4 +7,9 @@ import { AppComponent } from '../app.component';
   styleUrls: ['./navigation-bar.component.scss']
 })
 
-export class NavigationBarComponent extends AppComponent {}
+export class NavigationBarComponent extends AppComponent {
+
+  public ScrollTo(id: string): void {
+    document.getElementById(id)!.scrollIntoView();
+  }
+}
