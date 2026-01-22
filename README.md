@@ -1,5 +1,5 @@
 # Portfolio
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 21.1.1.
 
 The portfolio is available <a href="https://nicolasfrechette91.github.io/portfolio/">here</a>.
 
