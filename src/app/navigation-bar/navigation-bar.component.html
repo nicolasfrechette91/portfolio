@@ -5,24 +5,36 @@
     </div>
 
     <ul class="menu">
-      <li *ngIf="isFrench">
-        <button class="profile-link header-button" (click)="ScrollTo('skills-section')">COMPÉTENCES</button>
-      </li>
-      <li *ngIf="isFrench">
-        <button class="profile-link header-button" (click)="ScrollTo('projects-section')">PROJETS</button>
-      </li>
-      <li *ngIf="isFrench">
-        <button class="profile-link header-button" (click)="ScrollTo('contact-section')">CONTACTEZ</button>
-      </li>
-      <li *ngIf="!isFrench">
-        <button class="profile-link header-button" (click)="ScrollTo('skills-section')">SKILLS</button>
-      </li>
-      <li *ngIf="!isFrench">
-        <button class="profile-link header-button" (click)="ScrollTo('projects-section')">PROJECTS</button>
-      </li>
-      <li *ngIf="!isFrench">
-        <button class="profile-link header-button" (click)="ScrollTo('contact-section')">CONTACT</button>
-      </li>
+      @if (isFrench) {
+        <li>
+          <button class="profile-link header-button" (click)="ScrollTo('skills-section')">COMPÉTENCES</button>
+        </li>
+      }
+      @if (isFrench) {
+        <li>
+          <button class="profile-link header-button" (click)="ScrollTo('projects-section')">PROJETS</button>
+        </li>
+      }
+      @if (isFrench) {
+        <li>
+          <button class="profile-link header-button" (click)="ScrollTo('contact-section')">CONTACTEZ</button>
+        </li>
+      }
+      @if (!isFrench) {
+        <li>
+          <button class="profile-link header-button" (click)="ScrollTo('skills-section')">SKILLS</button>
+        </li>
+      }
+      @if (!isFrench) {
+        <li>
+          <button class="profile-link header-button" (click)="ScrollTo('projects-section')">PROJECTS</button>
+        </li>
+      }
+      @if (!isFrench) {
+        <li>
+          <button class="profile-link header-button" (click)="ScrollTo('contact-section')">CONTACT</button>
+        </li>
+      }
       <li>
         <a class="profile-link ext-link" href="https://github.com/nicolasfrechette91/" target="_blank">
           <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48px" height="48px">
@@ -37,20 +49,24 @@
           </svg>
         </a>
       </li>
-      <li *ngIf="!isFrench">
-        <button class="profile-link header-button">
-          <a class="profile-link ext-link" href="https://nicolasfrechette91.github.io/portfolio/?lang=fr">
-            FR
-          </a>
-        </button>
-      </li>
-      <li *ngIf="isFrench">
-        <button class="profile-link header-button">
-          <a class="profile-link ext-link" href="https://nicolasfrechette91.github.io/portfolio/">
-            EN
-          </a>
-        </button>
-      </li>
+      @if (!isFrench) {
+        <li>
+          <button class="profile-link header-button">
+            <a class="profile-link ext-link" href="https://nicolasfrechette91.github.io/portfolio/?lang=fr">
+              FR
+            </a>
+          </button>
+        </li>
+      }
+      @if (isFrench) {
+        <li>
+          <button class="profile-link header-button">
+            <a class="profile-link ext-link" href="https://nicolasfrechette91.github.io/portfolio/">
+              EN
+            </a>
+          </button>
+        </li>
+      }
     </ul>
   </nav>
 </mat-toolbar>

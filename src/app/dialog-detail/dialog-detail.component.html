@@ -1,34 +1,58 @@
 <h2 mat-dialog-title>
-  <ng-container *ngIf="isFrench">{{data.titleFrench}}</ng-container>
-  <ng-container *ngIf="!isFrench">{{data.title}}</ng-container>
+  @if (isFrench) {
+    {{data.titleFrench}}
+  }
+  @if (!isFrench) {
+    {{data.title}}
+  }
 </h2>
 
 <mat-dialog-content>
   <div class="content">
-    <div class="content-video_container" *ngIf="data.video">
-      <iframe class="content-video" [src]="data.video | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="content-image" *ngIf="data.images">
-      <img src={{data.images}}>
-    </div>
+    @if (data.video) {
+      <div class="content-video_container">
+        <iframe class="content-video" [src]="data.video | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    }
+    @if (data.images) {
+      <div class="content-image">
+        <img src={{data.images}}>
+      </div>
+    }
 
     <div class="content-description-title"><strong>Description</strong></div>
 
-    <div class="content-description" *ngIf="isFrench">{{data.descriptionFrench}}</div>
-    <div class="content-tasks-title" *ngIf="isFrench"><strong>Tâches</strong></div>
-    <div class="content-task" *ngIf="isFrench">
-      <ul class="content-tasks-list">
-        <li *ngFor="let task of data.tasksFrench">{{task}}</li>
-      </ul>
-    </div>
+    @if (isFrench) {
+      <div class="content-description">{{data.descriptionFrench}}</div>
+    }
+    @if (isFrench) {
+      <div class="content-tasks-title"><strong>Tâches</strong></div>
+    }
+    @if (isFrench) {
+      <div class="content-task">
+        <ul class="content-tasks-list">
+          @for (task of data.tasksFrench; track task) {
+            <li>{{task}}</li>
+          }
+        </ul>
+      </div>
+    }
 
-    <div class="content-description" *ngIf="!isFrench">{{data.description}}</div>
-    <div class="content-tasks-title" *ngIf="!isFrench"><strong>Tasks</strong></div>
-    <div class="content-task" *ngIf="!isFrench">
-      <ul class="content-tasks-list">
-        <li *ngFor="let task of data.tasks">{{task}}</li>
-      </ul>
-    </div>
+    @if (!isFrench) {
+      <div class="content-description">{{data.description}}</div>
+    }
+    @if (!isFrench) {
+      <div class="content-tasks-title"><strong>Tasks</strong></div>
+    }
+    @if (!isFrench) {
+      <div class="content-task">
+        <ul class="content-tasks-list">
+          @for (task of data.tasks; track task) {
+            <li>{{task}}</li>
+          }
+        </ul>
+      </div>
+    }
 
   </div>
 </mat-dialog-content>

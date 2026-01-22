@@ -1,23 +1,40 @@
 <div id="skills-section">
-  <h1 class="title-french" *ngIf="isFrench">
-    <span class="title-text">COMPÉTENCES TECHNIQUES</span>
-  </h1>
-  <h1 class="title" *ngIf="!isFrench">
-    <span class="title-text">TECHNICAL SKILLS</span>
-  </h1>
+  @if (isFrench) {
+    <h1 class="title-french">
+      <span class="title-text">COMPÉTENCES TECHNIQUES</span>
+    </h1>
+  }
+  @if (!isFrench) {
+    <h1 class="title">
+      <span class="title-text">TECHNICAL SKILLS</span>
+    </h1>
+  }
 
   <div class="container-skills">
-    <div class="container-skill" *ngFor="let skill of skills">
-      <div><img src={{skill.icon}} alt={{skill.name}} /></div>
-      <div class="skill-name">
-        <ng-container *ngIf="isFrench">{{skill.nameFrench}}</ng-container>
-        <ng-container *ngIf="!isFrench">{{skill.name}}</ng-container>
+    @for (skill of skills; track skill) {
+      <div class="container-skill">
+        <div><img src={{skill.icon}} alt={{skill.name}} /></div>
+        <div class="skill-name">
+          @if (isFrench) {
+            {{skill.nameFrench}}
+          }
+          @if (!isFrench) {
+            {{skill.name}}
+          }
+        </div>
+        <div class="tech">
+          @if (isFrench) {
+            <ul>@for (tool of skill.techFrench; track tool) {
+              <li>{{tool}}</li>
+            }</ul>
+          }
+          @if (!isFrench) {
+            <ul>@for (tool of skill.tech; track tool) {
+              <li>{{tool}}</li>
+            }</ul>
+          }
+        </div>
       </div>
-
-      <div class="tech">
-        <ul *ngIf="isFrench"><li *ngFor="let tool of skill.techFrench">{{tool}}</li></ul>
-        <ul *ngIf="!isFrench"><li *ngFor="let tool of skill.tech">{{tool}}</li></ul>
-      </div>
-    </div>
+    }
   </div>
 </div>
