@@ -6,9 +6,10 @@ import { DialogDetailComponent } from '../dialog-detail/dialog-detail.component'
 import { DialogData } from '../projects';
 
 @Component({
-  selector: 'app-project',
-  templateUrl: './project.component.html',
-  styleUrls: ['./project.component.scss']
+    selector: 'app-project',
+    templateUrl: './project.component.html',
+    styleUrls: ['./project.component.scss'],
+    standalone: false
 })
 
 export class ProjectComponent extends AppComponent {

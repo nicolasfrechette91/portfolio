@@ -3,9 +3,10 @@ import { AppComponent } from '../app.component';
 import { Projects } from '../projects';
 
 @Component({
-  selector: 'app-project-list',
-  templateUrl: './project-list.component.html',
-  styleUrls: ['./project-list.component.scss']
+    selector: 'app-project-list',
+    templateUrl: './project-list.component.html',
+    styleUrls: ['./project-list.component.scss'],
+    standalone: false
 })
 
 export class ProjectListComponent extends AppComponent {
