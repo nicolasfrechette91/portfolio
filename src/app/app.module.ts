@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { inject, NgModule, provideAppInitializer } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
@@ -42,9 +42,11 @@ import { DialogDetailComponent } from './dialog-detail/dialog-detail.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { SafePipe } from './pipe/safe.pipe';
+import { TranslatePipe } from './pipe/translate.pipe';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectComponent } from './project/project.component';
 import { SkillsComponent } from './skills/skills.component';
+import { TranslationService } from './translation/translation.service';
 
 @NgModule({
   declarations: [
@@ -57,6 +59,7 @@ import { SkillsComponent } from './skills/skills.component';
     SkillsComponent,
     DialogDetailComponent,
     SafePipe,
+    TranslatePipe,
   ],
   imports: [
     BrowserModule,
@@ -93,7 +96,11 @@ import { SkillsComponent } from './skills/skills.component';
     MatPaginatorModule,
     RouterModule
   ],
-  providers: [],
+  providers: [
+    provideAppInitializer(() => {
+      return inject(TranslationService).load();
+    })
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

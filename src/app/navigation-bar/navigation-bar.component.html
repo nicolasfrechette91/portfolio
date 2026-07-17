@@ -5,36 +5,15 @@
     </div>
 
     <ul class="menu">
-      @if (isFrench) {
-        <li>
-          <button class="profile-link header-button" (click)="ScrollTo('skills-section')">COMPÉTENCES</button>
-        </li>
-      }
-      @if (isFrench) {
-        <li>
-          <button class="profile-link header-button" (click)="ScrollTo('projects-section')">PROJETS</button>
-        </li>
-      }
-      @if (isFrench) {
-        <li>
-          <button class="profile-link header-button" (click)="ScrollTo('contact-section')">CONTACTEZ</button>
-        </li>
-      }
-      @if (!isFrench) {
-        <li>
-          <button class="profile-link header-button" (click)="ScrollTo('skills-section')">SKILLS</button>
-        </li>
-      }
-      @if (!isFrench) {
-        <li>
-          <button class="profile-link header-button" (click)="ScrollTo('projects-section')">PROJECTS</button>
-        </li>
-      }
-      @if (!isFrench) {
-        <li>
-          <button class="profile-link header-button" (click)="ScrollTo('contact-section')">CONTACT</button>
-        </li>
-      }
+      <li>
+        <button class="profile-link header-button" (click)="ScrollTo('skills-section')">{{ 'navigation.skills' | translate }}</button>
+      </li>
+      <li>
+        <button class="profile-link header-button" (click)="ScrollTo('projects-section')">{{ 'navigation.projects' | translate }}</button>
+      </li>
+      <li>
+        <button class="profile-link header-button" (click)="ScrollTo('contact-section')">{{ 'navigation.contact' | translate }}</button>
+      </li>
       <li>
         <a class="profile-link ext-link" href="https://github.com/nicolasfrechette91/" target="_blank">
           <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48px" height="48px">

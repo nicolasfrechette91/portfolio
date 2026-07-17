@@ -42,8 +42,4 @@ export class AppComponent implements OnDestroy {
   public get isFrench(): boolean {
     return this._isFrench;
   }
-
-  // To update on github, ng build
-  // On docs/index.html
-  // Replace <base href="/"> with <base href="https://nicolasfrechette91.github.io/portfolio/">
 }

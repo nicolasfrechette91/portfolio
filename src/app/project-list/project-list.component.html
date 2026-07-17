@@ -1,14 +1,7 @@
 <div id="projects-section">
-  @if (isFrench) {
-    <h1 class="title-french">
-      <span class="title-text">PROJETS PERSONNELS</span>
-    </h1>
-  }
-  @if (!isFrench) {
-    <h1 class="title">
-      <span class="title-text">PERSONAL PROJECTS</span>
-    </h1>
-  }
+  <h1 class="title">
+    <span class="title-text">{{ 'projects.title' | translate }}</span>
+  </h1>
 
   @for (project of projects; track project) {
     <div class="spacing-header">

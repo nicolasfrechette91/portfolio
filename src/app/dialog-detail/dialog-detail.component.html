@@ -1,10 +1,5 @@
 <h2 mat-dialog-title>
-  @if (isFrench) {
-    {{data.titleFrench}}
-  }
-  @if (!isFrench) {
-    {{data.title}}
-  }
+  {{ (data.translationKey + '.title') | translate }}
 </h2>
 
 <mat-dialog-content>
@@ -22,37 +17,15 @@
 
     <div class="content-description-title"><strong>Description</strong></div>
 
-    @if (isFrench) {
-      <div class="content-description">{{data.descriptionFrench}}</div>
-    }
-    @if (isFrench) {
-      <div class="content-tasks-title"><strong>Tâches</strong></div>
-    }
-    @if (isFrench) {
-      <div class="content-task">
-        <ul class="content-tasks-list">
-          @for (task of data.tasksFrench; track task) {
-            <li>{{task}}</li>
-          }
-        </ul>
-      </div>
-    }
-
-    @if (!isFrench) {
-      <div class="content-description">{{data.description}}</div>
-    }
-    @if (!isFrench) {
-      <div class="content-tasks-title"><strong>Tasks</strong></div>
-    }
-    @if (!isFrench) {
-      <div class="content-task">
-        <ul class="content-tasks-list">
-          @for (task of data.tasks; track task) {
-            <li>{{task}}</li>
-          }
-        </ul>
-      </div>
-    }
+    <div class="content-description">{{ (data.translationKey + '.description') | translate }}</div>
+    <div class="content-tasks-title"><strong>{{ 'dialog.tasks' | translate }}</strong></div>
+    <div class="content-task">
+      <ul class="content-tasks-list">
+        @for (task of ((data.translationKey + '.tasks') | translate); track task) {
+          <li>{{task}}</li>
+        }
+      </ul>
+    </div>
 
   </div>
 </mat-dialog-content>

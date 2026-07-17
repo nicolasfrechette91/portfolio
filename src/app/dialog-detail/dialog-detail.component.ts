@@ -1,7 +1,5 @@
 import { Component, Inject, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { ActivatedRoute } from '@angular/router';
-import { AppComponent } from '../app.component';
 import { DialogData } from '../projects';
 
 @Component({
@@ -12,13 +10,10 @@ import { DialogData } from '../projects';
     standalone: false
 })
 
-export class DialogDetailComponent extends AppComponent {
+export class DialogDetailComponent {
 
   constructor(
-    @Inject(MAT_DIALOG_DATA) public data: DialogData,
-    public override _ActivatedRoute: ActivatedRoute
-  ) {
-    super(_ActivatedRoute);
-  }
+    @Inject(MAT_DIALOG_DATA) public data: DialogData
+  ) {}
 
 }

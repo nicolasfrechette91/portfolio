@@ -1,49 +1,23 @@
 <div [ngClass]="(project.id%2==0)?'project-tile-reverse':'project-tile'">
   <div class="project-container">
-    @if (isFrench) {
-      <div class="project-name">{{project.nameFrench}}</div>
-    }
-    @if (isFrench) {
-      <div class="project-description pt-1">{{project.descriptionFrench}}</div>
-    }
-    @if (isFrench) {
-      <div class="project-languages-header">Langues</div>
-    }
-    @if (isFrench) {
-      <div class="project-languages pt-1">{{project.languagesFrench}}</div>
-    }
-
-    @if (!isFrench) {
-      <div class="project-name">{{project.name}}</div>
-    }
-    @if (!isFrench) {
-      <div class="project-description pt-1">{{project.description}}</div>
-    }
-    @if (!isFrench) {
-      <div class="project-languages-header">Languages</div>
-    }
-    @if (!isFrench) {
-      <div class="project-languages pt-1">{{project.languages}}</div>
-    }
+    <div class="project-name">{{ (project.translationKey + '.name') | translate }}</div>
+    <div class="project-description pt-1">{{ (project.translationKey + '.description') | translate }}</div>
+    <div class="project-languages-header">{{ 'projects.languages' | translate }}</div>
+    <div class="project-languages pt-1">{{ (project.translationKey + '.languages') | translate }}</div>
 
     <div class="project-links pt-3">
       @if (project.dialog) {
         <div class="more-info-button">
-          @if (isFrench) {
-            <a mat-stroked-button color="accent" (click)="openDialog(project.dialog)">Plus d'informations</a>
-          }
-          @if (!isFrench) {
-            <a mat-stroked-button color="accent" (click)="openDialog(project.dialog)">More info</a>
-          }
+          <a mat-stroked-button color="accent" (click)="openDialog(project.dialog)">{{ 'projects.moreInfo' | translate }}</a>
         </div>
       }
       @if (project.link) {
         <div class="more-info-button">
           @if (isFrench) {
-            <a mat-stroked-button color="accent" href={{project.linkFrench}} target="_blank" alt="Lien du Projet">Visite</a>
+            <a mat-stroked-button color="accent" href={{project.linkFrench}} target="_blank" [attr.alt]="'projects.linkAlt' | translate">{{ 'projects.visit' | translate }}</a>
           }
           @if (!isFrench) {
-            <a mat-stroked-button color="accent" href={{project.link}} target="_blank" alt="Project Link">Visit</a>
+            <a mat-stroked-button color="accent" href={{project.link}} target="_blank" [attr.alt]="'projects.linkAlt' | translate">{{ 'projects.visit' | translate }}</a>
           }
         </div>
       }
@@ -56,11 +30,9 @@
   </div>
 
   <div class="project-card">
-    @if (isFrench) {
-      <img src={{project.image}} alt="{{'Écran du '+ project.name}}">
-    }
-    @if (!isFrench) {
-      <img src={{project.image}} alt="{{'Screen of '+ project.name}}">
-    }
+    <img
+      src={{project.image}}
+      [attr.alt]="'projects.imageAlt' | translate: { name: ((project.translationKey + '.name') | translate) }"
+    >
   </div>
 </div>

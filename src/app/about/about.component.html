@@ -4,51 +4,20 @@
       <mat-card-header>
         <div mat-card-avatar class="custom-header-image"></div>
         <mat-card-title>Nicolas Frechette</mat-card-title>
-        @if (isFrench) {
-          <mat-card-subtitle>Développeur</mat-card-subtitle>
-        }
-        @if (!isFrench) {
-          <mat-card-subtitle>Developer</mat-card-subtitle>
-        }
+        <mat-card-subtitle>{{ 'about.role' | translate }}</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-image src="https://nicolasfrechette91.github.io/portfolio/assets/images/nico.jpg" alt="Me Studying Programming">
 
       <mat-card-content>
-        @if (isFrench) {
-          <p>🎓École Polytechnique Montréal 2015 <br> Baccalauréat en génie logiciel</p>
-        }
-        @if (!isFrench) {
-          <p>🎓Polytechnique Montreal 2015 <br> Software Engineering</p>
-        }
+        <p>{{ 'about.education.institution' | translate }} <br> {{ 'about.education.degree' | translate }}</p>
       </mat-card-content>
     </mat-card>
 
     <div class="custom-about">
-      @if (isFrench) {
-        <h1 class="custom-hello">Bonjour,</h1>
-      }
-      @if (isFrench) {
-        <p class="custom-sentence">Je suis un programmeur travailleur avec plus de 11 ans d'expérience dans le <strong>développement d'applications Web</strong>.</p>
-      }
-      @if (isFrench) {
-        <p class="custom-sentence">J'aime les projets de grande envergure, apprendre de nouvelles langues et interagir avec les autres.</p>
-      }
-      @if (isFrench) {
-        <p class="custom-sentence">La communication et l'organisation sont très importantes pour moi !</p>
-      }
-
-      @if (!isFrench) {
-        <h1 class="custom-hello">Hello,</h1>
-      }
-      @if (!isFrench) {
-        <p class="custom-sentence">I'm a hard-working programmer with 11+ years of experience in <strong>web application development</strong>.</p>
-      }
-      @if (!isFrench) {
-        <p class="custom-sentence">I love big projects, learning new languages and interacting with others.</p>
-      }
-      @if (!isFrench) {
-        <p class="custom-sentence">Communication and organization are very important to me!</p>
-      }
+      <h1 class="custom-hello">{{ 'about.greeting' | translate }}</h1>
+      <p class="custom-sentence">{{ 'about.introduction.prefix' | translate }} <strong>{{ 'about.introduction.emphasis' | translate }}</strong>.</p>
+      <p class="custom-sentence">{{ 'about.interests' | translate }}</p>
+      <p class="custom-sentence">{{ 'about.communication' | translate }}</p>
     </div>
   </div>
 </div>
