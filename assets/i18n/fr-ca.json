@@ -1,10 +1,12 @@
 {
   "navigation": {
+    "switchLanguage": "EN",
     "skills": "COMPÉTENCES",
     "projects": "PROJETS",
     "contact": "CONTACTEZ"
   },
   "about": {
+    "imageAlt": "Photo de moi étudiant la programmation",
     "role": "Développeur",
     "education": {
       "institution": "🎓École Polytechnique Montréal 2015",
@@ -62,6 +64,7 @@
     }
   },
   "projects": {
+    "githubLinkAlt": "Lien Github",
     "title": "PROJETS PERSONNELS",
     "languages": "Langues",
     "moreInfo": "Plus d'informations",
@@ -87,6 +90,8 @@
     }
   },
   "dialog": {
+    "description": "Description",
+    "close": "Fermer",
     "tasks": "Tâches"
   },
   "footer": {
