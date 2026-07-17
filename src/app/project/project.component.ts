@@ -1,9 +1,8 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ActivatedRoute } from '@angular/router';
-import { AppComponent } from '../app.component';
 import { DialogDetailComponent } from '../dialog-detail/dialog-detail.component';
 import { DialogData } from '../projects';
+import { TranslationService } from '../translation/translation.service';
 
 @Component({
     selector: 'app-project',
@@ -13,15 +12,13 @@ import { DialogData } from '../projects';
     standalone: false
 })
 
-export class ProjectComponent extends AppComponent {
+export class ProjectComponent {
   @Input() project: any;
 
   constructor(
     public dialog: MatDialog,
-    public override _ActivatedRoute: ActivatedRoute
-  ) {
-    super(_ActivatedRoute);
-  }
+    protected readonly translationService: TranslationService
+  ) {}
 
   openDialog(projectData: DialogData){
     this.dialog.open(DialogDetailComponent, {data: projectData});

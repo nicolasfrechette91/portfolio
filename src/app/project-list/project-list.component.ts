@@ -1,5 +1,4 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { AppComponent } from '../app.component';
 import { Projects } from '../projects';
 
 @Component({
@@ -10,7 +9,7 @@ import { Projects } from '../projects';
     standalone: false
 })
 
-export class ProjectListComponent extends AppComponent {
+export class ProjectListComponent {
   private _projects = Projects;
 
   public get projects(): typeof Projects {

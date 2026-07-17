@@ -1,5 +1,4 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { AppComponent } from '../app.component';
 
 @Component({
     selector: 'app-footer',
@@ -9,4 +8,4 @@ import { AppComponent } from '../app.component';
     standalone: false
 })
 
-export class FooterComponent extends AppComponent {}
+export class FooterComponent {}

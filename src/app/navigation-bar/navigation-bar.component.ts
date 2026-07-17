@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { AppComponent } from '../app.component';
+import { SupportedLocale, TranslationService } from '../translation/translation.service';
 
 @Component({
     selector: 'app-navigation-bar',
@@ -9,9 +9,15 @@ import { AppComponent } from '../app.component';
     standalone: false
 })
 
-export class NavigationBarComponent extends AppComponent {
+export class NavigationBarComponent {
+
+  constructor(protected readonly translationService: TranslationService) {}
 
   public ScrollTo(id: string): void {
     document.getElementById(id)!.scrollIntoView();
+  }
+
+  setLocale(locale: SupportedLocale): void {
+    void this.translationService.setLocale(locale);
   }
 }

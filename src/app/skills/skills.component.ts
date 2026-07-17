@@ -1,5 +1,4 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { AppComponent } from '../app.component';
 import { Skills } from '../skills';
 
 @Component({
@@ -10,7 +9,7 @@ import { Skills } from '../skills';
     standalone: false
 })
 
-export class SkillsComponent extends AppComponent {
+export class SkillsComponent {
   private _skills = Skills;
 
   public get skills(): typeof Skills {

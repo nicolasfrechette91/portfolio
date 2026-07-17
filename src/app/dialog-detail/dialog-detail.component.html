@@ -5,8 +5,9 @@
 <mat-dialog-content>
   <div class="content">
     @if (data.video) {
+      <p>batman</p>
       <div class="content-video_container">
-        <iframe class="content-video" [src]="data.video | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="content-video" [src]="data.video! | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     }
     @if (data.images) {
@@ -15,7 +16,7 @@
       </div>
     }
 
-    <div class="content-description-title"><strong>Description</strong></div>
+    <div class="content-description-title"><strong>{{ 'dialog.description' | translate }}</strong></div>
 
     <div class="content-description">{{ (data.translationKey + '.description') | translate }}</div>
     <div class="content-tasks-title"><strong>{{ 'dialog.tasks' | translate }}</strong></div>
@@ -31,5 +32,5 @@
 </mat-dialog-content>
 
 <mat-dialog-actions>
-  <button mat-button mat-dialog-close>Close</button>
+  <button mat-button mat-dialog-close>{{ 'dialog.close' | translate }}</button>
 </mat-dialog-actions>

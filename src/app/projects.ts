@@ -15,8 +15,8 @@ export const Projects = [
     translationKey: 'projects.items.weddingWebsite',
     dialog: {
       translationKey: 'projects.items.weddingWebsite.dialog',
-      images:'',
-      video:['']
+      images: null,
+      video: null
     }
   },
 ];

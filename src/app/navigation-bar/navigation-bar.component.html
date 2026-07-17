@@ -28,24 +28,17 @@
           </svg>
         </a>
       </li>
-      @if (!isFrench) {
-        <li>
-          <button class="profile-link header-button">
-            <a class="profile-link ext-link" href="https://nicolasfrechette91.github.io/portfolio/?lang=fr">
-              FR
-            </a>
-          </button>
-        </li>
-      }
-      @if (isFrench) {
-        <li>
-          <button class="profile-link header-button">
-            <a class="profile-link ext-link" href="https://nicolasfrechette91.github.io/portfolio/">
-              EN
-            </a>
-          </button>
-        </li>
-      }
+      <li>
+        <button
+          class="profile-link header-button"
+          type="button"
+          (click)="setLocale(translationService.locale() === 'fr-ca' ? 'en-ca' : 'fr-ca')"
+        >
+          <a class="profile-link ext-link">
+            {{ 'navigation.switchLanguage' | translate }}
+          </a>
+        </button>
+      </li>
     </ul>
   </nav>
 </mat-toolbar>

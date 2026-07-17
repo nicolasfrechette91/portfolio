@@ -13,17 +13,12 @@
       }
       @if (project.link) {
         <div class="more-info-button">
-          @if (isFrench) {
-            <a mat-stroked-button color="accent" href={{project.linkFrench}} target="_blank" [attr.alt]="'projects.linkAlt' | translate">{{ 'projects.visit' | translate }}</a>
-          }
-          @if (!isFrench) {
-            <a mat-stroked-button color="accent" href={{project.link}} target="_blank" [attr.alt]="'projects.linkAlt' | translate">{{ 'projects.visit' | translate }}</a>
-          }
+          <a mat-stroked-button color="accent" [href]="translationService.locale() === 'fr-ca' ? project.linkFrench : project.link" target="_blank" [attr.alt]="'projects.linkAlt' | translate">{{ 'projects.visit' | translate }}</a>
         </div>
       }
       @if (project.github) {
         <div class="more-info-button">
-          <a mat-stroked-button color="accent" href={{project.github}} target="_blank" alt="Github Link">Github</a>
+          <a mat-stroked-button color="accent" href={{project.github}} target="_blank" [attr.alt]="'projects.githubLinkAlt' | translate">Github</a>
         </div>
       }
     </div>

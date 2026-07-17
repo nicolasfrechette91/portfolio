@@ -1,10 +1,12 @@
 {
   "navigation": {
+    "switchLanguage": "FR",
     "skills": "SKILLS",
     "projects": "PROJECTS",
     "contact": "CONTACT"
   },
   "about": {
+    "imageAlt": "Me Studying Programming",
     "role": "Developer",
     "education": {
       "institution": "🎓Polytechnique Montreal 2015",
@@ -62,6 +64,7 @@
     }
   },
   "projects": {
+    "githubLinkAlt": "Github Link",
     "title": "PERSONAL PROJECTS",
     "languages": "Languages",
     "moreInfo": "More info",
@@ -87,6 +90,8 @@
     }
   },
   "dialog": {
+    "description": "Description",
+    "close": "Close",
     "tasks": "Tasks"
   },
   "footer": {
