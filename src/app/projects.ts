@@ -28,7 +28,7 @@ export const Projects = [
       description: 'This website was built to preserve memories while keeping a personalized and creative style throughout the website.',
       tasks: ['Develop website and logic according to UI design made by my wife', 'Adjust the UI to fit on mobile', 'Structure and organize to be able to reuse components / styles when possible', 'Support 3 languages (English / French / Spanish)'],
       images:'',
-      video:['https://nicolasfrechette91.github.io/portfolio/assets/videos/website.mp4'],
+      video:[''],
       titleFrench: 'Site internet de mon mariage',
       descriptionFrench: "Ce site Web a été créé pour préserver les souvenirs tout en conservant un style personnalisé et créatif.",
       tasksFrench: ["Développer le site Web en fonction du design réalisé par ma femme", "Ajuster l'interface utilisateur pour l'adapter au téléphone mobile", "Structurer et organiser pour pouvoir réutiliser les composants/styles lorsque cela était possible", "Traduction en 3 langues (Français/Anglais/Espagnol)"]
