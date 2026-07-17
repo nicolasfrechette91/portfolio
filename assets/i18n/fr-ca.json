@@ -1,0 +1,95 @@
+{
+  "navigation": {
+    "skills": "COMPÉTENCES",
+    "projects": "PROJETS",
+    "contact": "CONTACTEZ"
+  },
+  "about": {
+    "role": "Développeur",
+    "education": {
+      "institution": "🎓École Polytechnique Montréal 2015",
+      "degree": "Baccalauréat en génie logiciel"
+    },
+    "greeting": "Bonjour,",
+    "introduction": {
+      "prefix": "Je suis un programmeur travailleur avec plus de 11 ans d'expérience dans le",
+      "emphasis": "développement d'applications Web"
+    },
+    "interests": "J'aime les projets de grande envergure, apprendre de nouvelles langues et interagir avec les autres.",
+    "communication": "La communication et l'organisation sont très importantes pour moi !"
+  },
+  "skills": {
+    "title": "COMPÉTENCES TECHNIQUES",
+    "items": {
+      "frontEnd": {
+        "name": "Programmation Front-end",
+        "technologies": [
+          "Angular 19 (TypeScript)",
+          "HTML5, CSS3, Bootstrap",
+          "Node.js",
+          "jQuery"
+        ]
+      },
+      "backEnd": {
+        "name": "Programmation Back-end",
+        "technologies": [
+          "Loopback 4",
+          "C#",
+          "API RESTful et services Web",
+          "Java",
+          "ASP.NET",
+          "Python"
+        ]
+      },
+      "database": {
+        "name": "Base de données",
+        "technologies": [
+          "PostgreSQL",
+          "MySQL 8.0",
+          "Oracle SQL Developer",
+          "MongoDB NoSQL"
+        ]
+      },
+      "maintenance": {
+        "name": "Entretien",
+        "technologies": [
+          "Tester",
+          "Déboguer",
+          "Créer une nouvelle version",
+          "Déployer les modifications"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "PROJETS PERSONNELS",
+    "languages": "Langues",
+    "moreInfo": "Plus d'informations",
+    "visit": "Visite",
+    "linkAlt": "Lien du Projet",
+    "imageAlt": "Écran du {{name}}",
+    "items": {
+      "weddingWebsite": {
+        "name": "Site web pour mon mariage",
+        "description": "Création d'un site internet en préparation de mon mariage. Cela a été utilisé pour informer les invités de l'emplacement et rassembler toutes les photos en un seul endroit.",
+        "languages": "HTML · jQuery · CSS",
+        "dialog": {
+          "title": "Site internet de mon mariage",
+          "description": "Ce site Web a été créé pour préserver les souvenirs tout en conservant un style personnalisé et créatif.",
+          "tasks": [
+            "Développer le site Web en fonction du design réalisé par ma femme",
+            "Ajuster l'interface utilisateur pour l'adapter au téléphone mobile",
+            "Structurer et organiser pour pouvoir réutiliser les composants/styles lorsque cela était possible",
+            "Traduction en 3 langues (Français/Anglais/Espagnol)"
+          ]
+        }
+      }
+    }
+  },
+  "dialog": {
+    "tasks": "Tâches"
+  },
+  "footer": {
+    "title": "CONTACTEZ MOI !"
+  }
+}
