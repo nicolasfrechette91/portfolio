@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { AppComponent } from '../app.component';
@@ -9,6 +9,7 @@ import { DialogData } from '../projects';
     selector: 'app-project',
     templateUrl: './project.component.html',
     styleUrls: ['./project.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 

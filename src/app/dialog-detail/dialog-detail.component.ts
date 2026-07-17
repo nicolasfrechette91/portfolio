@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { AppComponent } from '../app.component';
@@ -8,6 +8,7 @@ import { DialogData } from '../projects';
     selector: 'app-dialog-detail',
     templateUrl: './dialog-detail.component.html',
     styleUrls: ['./dialog-detail.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 

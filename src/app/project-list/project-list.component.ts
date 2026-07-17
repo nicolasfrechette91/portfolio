@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { AppComponent } from '../app.component';
 import { Projects } from '../projects';
 
@@ -6,6 +6,7 @@ import { Projects } from '../projects';
     selector: 'app-project-list',
     templateUrl: './project-list.component.html',
     styleUrls: ['./project-list.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 

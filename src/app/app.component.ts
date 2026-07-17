@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { filter, Subscription } from 'rxjs';
 
@@ -6,6 +6,7 @@ import { filter, Subscription } from 'rxjs';
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 

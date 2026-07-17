@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { AppComponent } from '../app.component';
 import { Skills } from '../skills';
 
@@ -6,6 +6,7 @@ import { Skills } from '../skills';
     selector: 'app-skills',
     templateUrl: './skills.component.html',
     styleUrls: ['./skills.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 
