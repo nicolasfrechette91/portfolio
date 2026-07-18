@@ -3,31 +3,33 @@
 </h2>
 
 <mat-dialog-content>
-  <div class="content">
-    @if (data.video) {
-      <p>batman</p>
-      <div class="content-video_container">
-        <iframe class="content-video" [src]="data.video! | safe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    }
-    @if (data.images) {
-      <div class="content-image">
-        <img src={{data.images}}>
-      </div>
-    }
 
-    <div class="content-description-title"><strong>{{ 'dialog.description' | translate }}</strong></div>
+  <div class="content-description-title"><strong>{{ 'dialog.description' | translate }}</strong></div>
 
-    <div class="content-description">{{ (data.translationKey + '.description') | translate }}</div>
-    <div class="content-tasks-title"><strong>{{ 'dialog.tasks' | translate }}</strong></div>
-    <div class="content-task">
-      <ul class="content-tasks-list">
-        @for (task of ((data.translationKey + '.tasks') | translate); track task) {
-          <li>{{task}}</li>
-        }
-      </ul>
+  <div class="content-description">{{ (data.translationKey + '.description') | translate }}</div>
+  <div class="content-tasks-title"><strong>{{ 'dialog.tasks' | translate }}</strong></div>
+  <div class="content-task">
+    <ul class="content-tasks-list">
+      @for (task of ((data.translationKey + '.tasks') | translate); track task) {
+        <li>{{task}}</li>
+      }
+    </ul>
+  </div>
+
+  @if (data.image) {
+    <div class="content-image">
+      <img src={{data.image}}>
     </div>
+  }
 
+  <div class="content w-100">
+    @if (data.video) {
+      <div class="content-video_container pt-4">
+        <video #videoElement class="content-vi" controls>
+          <source [src]="data.video" type="video/mp4">
+        </video>
+      </div>
+    }
   </div>
 </mat-dialog-content>
 

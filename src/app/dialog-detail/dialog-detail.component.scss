@@ -1,31 +1,121 @@
-.content-description {
-  padding-bottom: 24px;
+//large screen
+@media(min-width:780px) {
+  .content-description {
+    padding-bottom: 24px;
+  }
+
+  .content-description-title {
+    font-size: 18px !important;
+    padding-bottom: 16px;
+  }
+
+  .content-tasks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 16px;
+  }
+
+  .content-task{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .content-tasks-title {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 18px !important;
+    text-align:left;
+  }
+
+  .content-video_container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .content-image{
+    display: flex;
+    place-content: center;
+    margin-bottom: 32px;
+  }
+
+  .d-flex{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .image_in {
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    border: 10px solid;
+    border-color: black;
+  }
+
+  .content-vi {
+    height: auto;
+    box-align: left;
+    width: 80%;
+    border: 10px solid;
+    border-color: black;
+  }
+
+  .content-video {
+    height: auto;
+    width: 80%;
+    border: 10px solid;
+    border-color: black;
+  }
+
+  .button-close {
+    border-radius: 10px;
+    border: 1px solid;
+    border-color:#cb80b6;
+  }
+
+  .button-close:hover {
+    background-color:#cb6ed3;
+  }
 }
 
-.content-description-title {
-  font-size: 18px !important;
-  padding-bottom: 16px;
-}
+// Mobile Exclusive
+@media(max-width:768px){
 
-.content-tasks-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding-left: 16px;
-}
+  .content-video {
+    width: 100% !important;
+    border: 3px solid;
+    border-color: black;
+  }
 
-.content-tasks-title {
-  font-size: 18px !important;
-}
+  .d-flex{
+    display: unset !important;
+  }
 
-.content-video {
-  height:auto;
-  width:100%;
-}
+  .content-description{
+    margin-bottom: 10px;
+  }
 
-@media only screen and (min-width:768px) {
-  .content-video{
-    height:315px;
-    width:560px;
+  .button-close {
+    border-radius: 3px;
+    border: 1px solid;
+    border-color:#cb80b6;
+  }
+
+  .image_in {
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 3px solid;
+    border-color: black;
+  }
+
+  .content-vi {
+    width: 100%;
+    border: 3px solid black;
   }
 }

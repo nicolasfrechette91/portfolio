@@ -21,6 +21,6 @@ export class ProjectComponent {
   ) {}
 
   openDialog(projectData: DialogData){
-    this.dialog.open(DialogDetailComponent, {data: projectData});
+    this.dialog.open(DialogDetailComponent, {data: projectData, width: '80vw', maxWidth: '80vw'});
   }
 }

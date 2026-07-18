@@ -1,7 +1,7 @@
 export interface DialogData {
   translationKey: string,
-  images: '',
-  video: '',
+  image: string,
+  video: string,
 }
 
 /* personal projects*/
@@ -15,8 +15,8 @@ export const Projects = [
     translationKey: 'projects.items.weddingWebsite',
     dialog: {
       translationKey: 'projects.items.weddingWebsite.dialog',
-      images: null,
-      video: null
+      images: '',
+      video: 'https://nicolasfrechette91.github.io/portfolio/assets/videos/website.mp4'
     }
   },
 ];
