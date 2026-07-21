@@ -27,15 +27,15 @@
         "name": "Front-end Programming",
         "technologies": [
           "Angular 22 (TypeScript)",
+          "React",
           "HTML5, CSS3, Bootstrap",
-          "Node.js",
           "jQuery"
         ]
       },
       "backEnd": {
         "name": "Back-end Programming",
         "technologies": [
-          "Loopback 4",
+          "Node.js",
           "C#",
           "RESTful API and Web Services",
           "Java",
@@ -72,6 +72,24 @@
     "linkAlt": "Project Link",
     "imageAlt": "Screen of {{name}}",
     "items": {
+      "levelHabit": {
+        "name": "Level Habit",
+        "description": "A full-stack gamified habit tracker that helps users build routines, earn XP, maintain streaks, unlock achievements and follow their progress over time.",
+        "languages": "Angular · TypeScript · ASP.NET Core · PostgreSQL",
+        "dialog": {
+          "title": "Level Habit",
+          "description": "Level Habit is a responsive full-stack application that turns personal habit building into a progression system. Users can securely manage their habits, complete daily tasks, earn experience, increase their level, build streaks, unlock achievements and review detailed activity analytics.",
+          "tasks": [
+            "Build a responsive Angular application with protected routes and user-focused dashboards",
+            "Create a secure ASP.NET Core REST API with JWT authentication and user-scoped data",
+            "Implement habit management, daily completions, XP, levels, streaks and achievements",
+            "Create progress and activity analytics from habit completion history",
+            "Add email verification, password recovery and secure refresh-token authentication",
+            "Add automated frontend, backend, accessibility and end-to-end tests",
+            "Configure CI/CD and deploy the frontend, API and PostgreSQL database"
+          ]
+        }
+      },
       "weddingWebsite": {
         "name": "Wedding Website",
         "description": "Personalized UI design for a major event. The website was used to inform the event details as well as to create announcements, photo repository and souvenir details in one location.",

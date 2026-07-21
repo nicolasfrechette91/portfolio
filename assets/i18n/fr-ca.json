@@ -27,15 +27,15 @@
         "name": "Programmation Front-end",
         "technologies": [
           "Angular 19 (TypeScript)",
+          "React",
           "HTML5, CSS3, Bootstrap",
-          "Node.js",
           "jQuery"
         ]
       },
       "backEnd": {
         "name": "Programmation Back-end",
         "technologies": [
-          "Loopback 4",
+          "Node.js",
           "C#",
           "API RESTful et services Web",
           "Java",
@@ -72,6 +72,24 @@
     "linkAlt": "Lien du Projet",
     "imageAlt": "Écran du {{name}}",
     "items": {
+      "levelHabit": {
+        "name": "Level Habit",
+        "description": "Une application complète et ludique de suivi d’habitudes qui aide les utilisateurs à développer leurs routines, gagner de l’XP, maintenir leurs séries, débloquer des succès et suivre leur progression.",
+        "languages": "Angular · TypeScript · ASP.NET Core · PostgreSQL",
+        "dialog": {
+          "title": "Level Habit",
+          "description": "Level Habit est une application complète et adaptative qui transforme le développement d’habitudes personnelles en système de progression. Les utilisateurs peuvent gérer leurs habitudes de façon sécuritaire, accomplir leurs tâches quotidiennes, gagner de l’expérience, augmenter leur niveau, maintenir leurs séries, débloquer des succès et consulter des statistiques détaillées.",
+          "tasks": [
+            "Créer une application Angular adaptative avec des routes protégées et des tableaux de bord axés sur l’utilisateur",
+            "Développer une API REST ASP.NET Core sécurisée avec authentification JWT et données propres à chaque utilisateur",
+            "Implémenter la gestion des habitudes, les accomplissements quotidiens, l’XP, les niveaux, les séries et les succès",
+            "Créer des statistiques de progression et d’activité à partir de l’historique des habitudes",
+            "Ajouter la vérification par courriel, la récupération du mot de passe et une authentification sécurisée par jetons de renouvellement",
+            "Ajouter des tests automatisés pour le frontend, le backend, l’accessibilité et les parcours de bout en bout",
+            "Configurer l’intégration et le déploiement continus du frontend, de l’API et de la base de données PostgreSQL"
+          ]
+        }
+      },
       "weddingWebsite": {
         "name": "Site web pour mon mariage",
         "description": "Création d'un site internet en préparation de mon mariage. Cela a été utilisé pour informer les invités de l'emplacement et rassembler toutes les photos en un seul endroit.",
