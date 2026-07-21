@@ -20,6 +20,7 @@ ul {
 .header-button {
   background-color: unset !important;
   border: unset;
+  cursor: pointer;
   font-family: 'Inter Variable';
   font-size: 24px;
   font-weight: 700;
@@ -40,6 +41,7 @@ ul {
   font-size: 24px;
   gap: 4px;
   justify-content: flex-end;
+ 
 }
 
 .nav-header {
