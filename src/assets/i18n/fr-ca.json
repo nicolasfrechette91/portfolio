@@ -37,10 +37,9 @@
         "technologies": [
           "Node.js",
           "C#",
+          "Python",
           "API RESTful et services Web",
-          "Java",
-          "ASP.NET",
-          "Python"
+          "Java"
         ]
       },
       "database": {
