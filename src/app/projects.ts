@@ -9,7 +9,7 @@ export const Projects = [
   {
     id: 2,
     github: 'https://github.com/nicolasfrechette91/LevelHabit',
-    image: 'https://nicolasfrechette91.github.io/portfolio/assets/images/levelHabit_login.png',
+    image: 'https://nicolasfrechette91.github.io/portfolio/assets/images/levelHabit_login_2.png',
     link: 'https://nicolasfrechette91.github.io/LevelHabit/',
     linkFrench: 'https://nicolasfrechette91.github.io/LevelHabit/',
     translationKey: 'projects.items.levelHabit',
