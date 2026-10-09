@@ -89,6 +89,23 @@
           ]
         }
       },
+      "sewnCovers": {
+        "name": "SewnCovers",
+        "description": "A full-stack cushion-cover configurator that lets users enter the measurements of the cushion they own, choose a fabric and pattern, preview the result and share a saved design.",
+        "languages": "Next.js · TypeScript · FastAPI · PostgreSQL",
+        "dialog": {
+          "title": "SewnCovers",
+          "description": "SewnCovers is a responsive full-stack prototype for designing replacement cushion covers. Users pick one of five cushion shapes, enter real measurements guided by a diagram, choose a fabric and pattern, preview the cover and save it as an immutable share link. The whole flow works without an account, with optional sign-in to keep designs.",
+          "tasks": [
+            "Build a guided, multi-step configurator in Next.js and React with a static export to GitHub Pages",
+            "Create a FastAPI REST API with runtime-validated responses and a PostgreSQL database",
+            "Support five cushion shapes with measurement validation and a live patterned preview",
+            "Implement immutable, shareable designs that always restore exactly what was saved",
+            "Build a documented design system with checked contrast, reduced-motion and forced-colours support",
+            "Add frontend unit, Playwright end-to-end and backend tests, run by CI/CD before deploying to GitHub Pages and Render"
+          ]
+        }
+      },
       "weddingWebsite": {
         "name": "Wedding Website",
         "description": "Personalized UI design for a major event. The website was used to inform the event details as well as to create announcements, photo repository and souvenir details in one location.",

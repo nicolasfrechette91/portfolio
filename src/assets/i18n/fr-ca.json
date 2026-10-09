@@ -89,6 +89,23 @@
           ]
         }
       },
+      "sewnCovers": {
+        "name": "SewnCovers",
+        "description": "Un configurateur de housses de coussin full-stack qui permet d'entrer les mesures d'un coussin existant, de choisir un tissu et un motif, de prévisualiser le résultat et de partager un design sauvegardé.",
+        "languages": "Next.js · TypeScript · FastAPI · PostgreSQL",
+        "dialog": {
+          "title": "SewnCovers",
+          "description": "SewnCovers est un prototype full-stack responsive pour concevoir des housses de coussin de remplacement. L'utilisateur choisit l'une des cinq formes de coussin, entre ses mesures réelles à l'aide d'un schéma, sélectionne un tissu et un motif, prévisualise la housse et la sauvegarde sous forme de lien de partage immuable. Tout le parcours fonctionne sans compte, avec une connexion optionnelle pour conserver ses designs.",
+          "tasks": [
+            "Construire un configurateur guidé en plusieurs étapes avec Next.js et React, exporté de façon statique sur GitHub Pages",
+            "Créer une API REST FastAPI avec des réponses validées à l'exécution et une base de données PostgreSQL",
+            "Prendre en charge cinq formes de coussin avec validation des mesures et aperçu du motif en temps réel",
+            "Implémenter des designs immuables et partageables qui restaurent toujours exactement ce qui a été sauvegardé",
+            "Bâtir un système de design documenté avec contrastes vérifiés et prise en charge du mouvement réduit et des couleurs forcées",
+            "Ajouter des tests unitaires frontend, des tests de bout en bout (e2e) Playwright et des tests backend, exécutés par le CI/CD avant le déploiement sur GitHub Pages et Render"
+          ]
+        }
+      },
       "weddingWebsite": {
         "name": "Site web pour mon mariage",
         "description": "Création d'un site internet en préparation de mon mariage. Cela a été utilisé pour informer les invités de l'emplacement et rassembler toutes les photos en un seul endroit.",

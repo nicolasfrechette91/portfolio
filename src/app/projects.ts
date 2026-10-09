@@ -7,6 +7,19 @@ export interface DialogData {
 /* personal projects*/
 export const Projects = [
   {
+    id: 3,
+    github: 'https://github.com/nicolasfrechette91/SewnCovers',
+    image: 'https://nicolasfrechette91.github.io/portfolio/assets/images/sewnCovers_home.jpg',
+    link: 'https://nicolasfrechette91.github.io/SewnCovers/',
+    linkFrench: 'https://nicolasfrechette91.github.io/SewnCovers/',
+    translationKey: 'projects.items.sewnCovers',
+    dialog: {
+      translationKey: 'projects.items.sewnCovers.dialog',
+      image: 'https://nicolasfrechette91.github.io/portfolio/assets/images/sewnCovers_preview.jpg',
+      video: ''
+    }
+  },
+  {
     id: 2,
     github: 'https://github.com/nicolasfrechette91/LevelHabit',
     image: 'https://nicolasfrechette91.github.io/portfolio/assets/images/levelHabit_login.png',
