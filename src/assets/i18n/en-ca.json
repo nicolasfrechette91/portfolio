@@ -92,7 +92,7 @@
       "sewnCovers": {
         "name": "SewnCovers",
         "description": "A full-stack cushion-cover configurator that lets users enter the measurements of the cushion they own, choose a fabric and pattern, preview the result and share a saved design.",
-        "languages": "Next.js · TypeScript · FastAPI · PostgreSQL",
+        "languages": "Next.js · TypeScript · Python · FastAPI · PostgreSQL",
         "dialog": {
           "title": "SewnCovers",
           "description": "SewnCovers is a responsive full-stack prototype for designing replacement cushion covers. Users pick one of five cushion shapes, enter real measurements guided by a diagram, choose a fabric and pattern, preview the cover and save it as an immutable share link. The whole flow works without an account, with optional sign-in to keep designs.",

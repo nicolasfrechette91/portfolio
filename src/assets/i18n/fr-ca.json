@@ -92,7 +92,7 @@
       "sewnCovers": {
         "name": "SewnCovers",
         "description": "Un configurateur de housses de coussin full-stack qui permet d'entrer les mesures d'un coussin existant, de choisir un tissu et un motif, de prévisualiser le résultat et de partager un design sauvegardé.",
-        "languages": "Next.js · TypeScript · FastAPI · PostgreSQL",
+        "languages": "Next.js · TypeScript · Python · FastAPI · PostgreSQL",
         "dialog": {
           "title": "SewnCovers",
           "description": "SewnCovers est un prototype full-stack responsive pour concevoir des housses de coussin de remplacement. L'utilisateur choisit l'une des cinq formes de coussin, entre ses mesures réelles à l'aide d'un schéma, sélectionne un tissu et un motif, prévisualise la housse et la sauvegarde sous forme de lien de partage immuable. Tout le parcours fonctionne sans compte, avec une connexion optionnelle pour conserver ses designs.",
